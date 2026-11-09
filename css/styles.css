@@ -1,0 +1,230 @@
+
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f6f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabecera */
+header {
+    background-color: #365c45;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #294735;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+section {
+    margin-bottom: 45px;
+}
+
+h2 {
+    color: #365c45;
+}
+
+/* Presentación del blog */
+.bienvenida {
+    text-align: center;
+    padding: 20px;
+}
+
+.bienvenida p {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* Tarjetas de las rutas */
+.contenedor-rutas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.ruta {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.ruta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.ruta h3,
+.ruta p {
+    margin: 15px;
+}
+
+.ruta h3 {
+    color: #365c45;
+}
+
+.ruta a {
+    display: inline-block;
+    background-color: #365c45;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 0 15px 20px;
+    border-radius: 4px;
+}
+
+.ruta a:hover {
+    background-color: #294735;
+}
+
+/* Sobre el blog */
+#sobre-mi {
+    background-color: #e8eee7;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #294735;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Adaptación a móviles */
+@media (max-width: 768px) {
+    .contenedor-rutas {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+}
+
+/* Estilos de las entradas del blog */
+.entrada {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.entrada h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.entrada h3 {
+    color: #365c45;
+    margin-top: 30px;
+}
+
+.entrada p {
+    text-align: justify;
+}
+
+.introduccion {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.imagen-entrada {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Información básica de la ruta */
+.datos-ruta {
+    background-color: #e8eee7;
+    padding: 20px 20px 20px 40px;
+    border-radius: 8px;
+}
+
+.datos-ruta li {
+    margin-bottom: 8px;
+}
+
+/* Enlace para volver */
+.volver {
+    display: inline-block;
+    background-color: #365c45;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.volver:hover {
+    background-color: #294735;
+}
+
+@media (max-width: 768px) {
+    .entrada h2 {
+        font-size: 25px;
+    }
+
+    .entrada p {
+        text-align: left;
+    }
+}
+
+/* Botón de Google Maps */
+.boton-maps {
+    display: inline-block;
+    background-color: #477a59;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.boton-maps:hover {
+    background-color: #365c45;
+}
